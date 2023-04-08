@@ -4,9 +4,10 @@ var router = express.Router();
 router.get('/products', function(req, res, next) {
     var name = '';
     if (req.query.name) name = req.query.name;
-
     var con = req.app.get('con');
-    con.query(`SELECT * FROM products WHERE name LIKE '%${name}%'`, 
+    var query = `SELECT * FROM products WHERE name LIKE '%${name}%'`;
+    console.log("query: ", query)
+    con.query(query,
         function (err, result, fields) {
             if (err) {
                 res.json(err);

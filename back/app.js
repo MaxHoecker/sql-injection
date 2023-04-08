@@ -8,7 +8,7 @@ var con = mysql.createConnection({
     port: 3306,
     database: "sqli",
     user: "root",
-    password: "",
+    password: "password",
     multipleStatements: true
 });
   

@@ -46,16 +46,16 @@ create table reviews
     PRIMARY KEY (ID)
 );
 
-insert into users(username, password, email, balance) values ('pedja', 'pass1234', 'pedja@gmail.com', 10000);
-insert into users(username, password, email, balance) values ('vlada', 'pass1234', 'vlada@gmail.com', 20000);
-insert into users(username, password, email, balance) values ('miki', 'pass1234', 'miki@gmail.com', 30000);
-insert into users(username, password, email, balance) values ('moma', 'pass1234', 'moma@gmail.com', 40000);
+insert into users(username, password, email, balance) values ('eMusk', 'pass1234', 'to.the.moon420@gmail.com', 100000000);
+insert into users(username, password, email, balance) values ('bezosRox', 'pass1234', 'humbleGuy@yahoo.com', 20000);
+insert into users(username, password, email, balance) values ('jim', 'pass1234', 'iLuvCrypto@gmail.com', 30);
+insert into users(username, password, email, balance) values ('samBankman', 'pass1234', 'crypto.bro@gmail.com', 40000000);
 
-insert into products(sellerId, name, price, paidPromotion) values (1, 'Intel i3 procesor', 200, true);
-insert into products(sellerId, name, price, paidPromotion) values (1, 'Intel i5 procesor', 300, false);
-insert into products(sellerId, name, price, paidPromotion) values (2, 'Intel i7 procesor', 400, false);
-insert into products(sellerId, name, price, paidPromotion) values (3, 'Acer Aspire laptop', 900, true);
-insert into products(sellerId, name, price, paidPromotion) values (4, 'Logitech tastatura', 50, false);
+insert into products(sellerId, name, price, paidPromotion) values (1, 'DOGE', 1, true);
+insert into products(sellerId, name, price, paidPromotion) values (1, 'BTC', 27900, false);
+insert into products(sellerId, name, price, paidPromotion) values (2, 'BTC', 20, false);
+insert into products(sellerId, name, price, paidPromotion) values (3, 'ETH', 1800, true);
+insert into products(sellerId, name, price, paidPromotion) values (4, 'BCH', 123, false);
 
 insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (2, 1, 200, 12, 'Pera', 'Peric', 'Bulevar kralja Aleksandra 48/5', '063123456');
 insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (3, 1, 200, 7, 'Mika', 'Mikic', 'Bulevar kralja Aleksandra 12/16', '064987654');
